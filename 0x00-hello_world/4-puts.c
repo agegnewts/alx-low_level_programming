@@ -9,9 +9,9 @@
  *
  *  return will return 0 for proper exectuion
  */
-int main (void)
+int main(void)
 {
-	char name[]=" \"Programming is like building a multilingual puzzle";
+	char name[] = "\"Programming is like building a multilingual puzzle";
 	puts(name);
-	return 0;
+	return (0);
 }
