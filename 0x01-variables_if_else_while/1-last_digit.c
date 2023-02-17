@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Prints the last digit stored in th variable n
- * Return : Always 0 (success)
+ * main - Prints the last digit of a random generated number
+ *
+ * checking to see if it is greater than 5, less than 6 or 0
+ *
+ * Return: Always 0 (success)
  */
 int main(void)
 {
@@ -25,6 +28,7 @@ int main(void)
 	else if (lastD == 0)
 	{
 		printf("Last digit of %i and is 0\n", n, lastD);
+
 	}
 	return (0);
 }
