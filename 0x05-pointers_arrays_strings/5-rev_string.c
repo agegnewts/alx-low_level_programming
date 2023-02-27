@@ -8,12 +8,21 @@ void rev_string(char *s)
 {
 	int length;
 	int J;
+	char *rev;
+	char *org;
+	char ch;
+
 
 	length = _strlen(s);
-
-	for (J = length - 1; J > 0; J--)
+	org = s;
+	rev = s + (length - 1);
+	for (J = 0; J < (length - 1); J++)
 	{
-		_putchar(s[J]);
+		ch = *rev;
+		*rev = *org;
+		*org = ch;
+		rev--;
+		org++;
 
 	}
 }
