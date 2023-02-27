@@ -1,28 +1,24 @@
- #include "main.h"
- /**
-  * rev_sgtring - returns the reverse of s
-  *
-  * Return: reverse string
-  */
+#include "main.h"
+
+/**
+ * rev_string - Reverses a string
+ * @s: Input string
+ * Return: String in reverse
+ */
+
 void rev_string(char *s)
 {
-	int length;
-	int J;
-	char *rev;
-	char *org;
-	char ch;
+	char rev = s[0];
+	int counter = 0;
+	int i;
 
-
-	length = _strlen(s);
-	org = s;
-	rev = s + (length - 1);
-	for (J = 0; J < (length - 1); J++)
+	while (s[counter] != '\0')
+	counter++;
+	for (i = 0; i < counter; i++)
 	{
-		ch = *rev;
-		*rev = *org;
-		*org = ch;
-		rev--;
-		org++;
-
+		counter--;
+		rev = s[i];
+		s[i] = s[counter];
+		s[counter] = rev;
 	}
 }
