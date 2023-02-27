@@ -14,7 +14,7 @@ void print_rev(char *s)
 		inicount++;
 		s++;
 	}
-	/* s--;w */
+	s--;
 	for (secondcount = inicount; secondcount > 0;  secondcount--)
 	{
 		_putchar(*s);
