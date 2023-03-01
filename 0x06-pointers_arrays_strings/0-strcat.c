@@ -11,7 +11,6 @@
 char *_strcat(char *dest, char *src)
 {
 	int lengthd;
-	/* int lengths;*/
 	int i;
 
 	lengthd = 0;
@@ -19,9 +18,8 @@ char *_strcat(char *dest, char *src)
 	{
 		lengthd++;
 	}
-	/*printf("size of dest %d\n", lengthd);*/
-	/* lengths = sizeof(src);*/
-	for (i = 0; src[i] <= '\0'; i++)
+
+	for (i = 0; src[i]; i++)
 	{
 		dest[lengthd++] = src[i];
 	}
