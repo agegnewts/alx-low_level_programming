@@ -14,14 +14,17 @@ char *_strncat(char *dest, char *src, int n)
 	int lengthd;
 	/* int lengths; not needed  */
 	int i;
-	/* int x;*/
 
-	/*x = 3;*/ 	
+	lengthd  = 0;
+	while (dest[lengthd])
+	{
+		lengthd++;
+	}
 
-	lengthd = sizeof(dest);
+	/* lengthd = sizeof(dest);*/
 	/* lengths = sizeof(src);*/
 	for (i = 0; i <= n && src[n] != '\0';  i++)
-	{	
+	{
 		dest[lengthd + i] = src[i];
 		printf("dest value %s %s\n", dest, src);
 	}
