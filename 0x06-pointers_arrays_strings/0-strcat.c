@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strcat-concatenates two strings
  *
@@ -14,10 +15,11 @@ char *_strcat(char *dest, char *src)
 	int i;
 
 	lengthd = sizeof(dest);
+	/*printf("size of dest %d\n", lengthd);*/
 	/* lengths = sizeof(src);*/
-	for (i = 0; i <= '\0'; i++)
+	for (i = 0; src[i] <= '\0'; i++)
 	{
-		dest[lengthd + i] = src[i];
+		dest[lengthd ++] = src[i];
 	}
 	return (dest);
 }
