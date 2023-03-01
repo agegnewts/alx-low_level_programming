@@ -16,6 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 
 	lengthd  = 0;
+	i = 0;
 	while (dest[lengthd])
 	{
 		lengthd++;
@@ -23,10 +24,16 @@ char *_strncat(char *dest, char *src, int n)
 	/*lengthd--;*/
 	/* lengthd = sizeof(dest);*/
 	/* lengths = sizeof(src);*/
-	for (i = 0; i < n && src[n] != '\0';  i++)
+	/*for (i = 0; i < n && src[n] != '\0';  i++)
 	{
 		dest[lengthd + i] = src[i];
-		/*printf("dest value %s %s\n", dest, src);*/
+		printf("dest value %s %s\n", dest, src);
+	}*/
+	while(src[i] != '\0' && n > i)
+	{
+		dest[lengthd] = src[i];
+		lengthd++;
+		i++;
 	}
 	dest[lengthd + i] = '\0';
 	return (dest);
