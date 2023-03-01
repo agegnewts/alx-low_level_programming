@@ -4,6 +4,7 @@
  * @dest: string that gets a copy
  * @src: string that will be copied
  * @n:  the number of strings that will be copied
+ * Return: copied pointer to main program
 */
 
 
