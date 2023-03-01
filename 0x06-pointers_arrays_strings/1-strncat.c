@@ -24,12 +24,12 @@ char *_strncat(char *dest, char *src, int n)
 	/*lengthd--;*/
 	/* lengthd = sizeof(dest);*/
 	/* lengths = sizeof(src);*/
-	/*for (i = 0; i < n && src[n] != '\0';  i++)
-	{
-		dest[lengthd + i] = src[i];
-		printf("dest value %s %s\n", dest, src);
-	}*/
-	while(src[i] != '\0' && n > i)
+	/*for (i = 0; i < n && src[n] != '\0';  i++)*/
+	/*{*/
+	/*	dest[lengthd + i] = src[i];*/
+	/*	printf("dest value %s %s\n", dest, src);*/
+	/*}*/
+	while (src[i] != '\0' && n > i)
 	{
 		dest[lengthd] = src[i];
 		lengthd++;
