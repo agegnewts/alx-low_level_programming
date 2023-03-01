@@ -14,7 +14,11 @@ char *_strcat(char *dest, char *src)
 	/* int lengths;*/
 	int i;
 
-	lengthd = sizeof(dest);
+	lengthd = 0;
+	while (dest[lengthd])
+	{
+		lengthd++;
+	}
 	/*printf("size of dest %d\n", lengthd);*/
 	/* lengths = sizeof(src);*/
 	for (i = 0; src[i] <= '\0'; i++)
