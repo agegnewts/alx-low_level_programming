@@ -20,13 +20,14 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		lengthd++;
 	}
-
+	/*lengthd--;*/
 	/* lengthd = sizeof(dest);*/
 	/* lengths = sizeof(src);*/
-	for (i = 0; i <= n && src[n] != '\0';  i++)
+	for (i = 0; i < n && src[n] != '\0';  i++)
 	{
 		dest[lengthd + i] = src[i];
-		printf("dest value %s %s\n", dest, src);
+		/*printf("dest value %s %s\n", dest, src);*/
 	}
+	/*dest[lengthd + i] = '\0';*/
 	return (dest);
 }
