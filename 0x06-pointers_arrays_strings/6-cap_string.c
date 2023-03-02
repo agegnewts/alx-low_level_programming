@@ -14,6 +14,10 @@ char *cap_string(char *s)
 	/*iterate through our array values*/
 	while (s[i] != '\0')
 	{
+		if (i == 0)
+		{
+			s[i] = s[i] - 32;
+		}
 		if (s[i] >= 97 && s[i] <= 122)
 		{
 
@@ -23,7 +27,7 @@ char *cap_string(char *s)
 				s[i - 1] == 40 || s[i - 1] == 41 || s[i - 1] == 123 ||
 				s[i - 1] == 124)
 			{
-				s[i] -= 32;
+				s[i] = s[i] -  32;
 			}
 		}
 		i++;
