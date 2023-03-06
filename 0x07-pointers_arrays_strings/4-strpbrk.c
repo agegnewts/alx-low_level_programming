@@ -4,7 +4,7 @@
  * _strpbrk - searches and returns amount of similar letters
  *
  * @s: pointer of string passed to the function
- * @accept: used as the similar letters 
+ * @accept: used as the similar letters
  *
  * Return: returns a pointer to the byte s if there is a match else
  * return NULL
