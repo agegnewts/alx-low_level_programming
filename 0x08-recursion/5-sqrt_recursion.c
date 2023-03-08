@@ -11,7 +11,7 @@ int _sqrt_recursion_real(int n, int a, int b)
 {
 	int numb, numb_sqd;
 
-	numb = (min + max) / 2;	
+	numb = (a + b) / 2;	
 	numb_sqd = numb * numb;	
 
 	if (numb_sqd == n)		
